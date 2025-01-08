@@ -13,7 +13,23 @@ json   protobuf
 // 这里是框架提供给外部使用的，可以发布rpc方法的函数接口
 void RpcProvider::NotifyService(google::protobuf::Service *service)
 {
+    ServiceInfo service_info;
+    service_info.m_service = service;
+    //获取服务对象的描述信息
+    const google::protobuf::ServiceDescriptor *pserviceDesc = service->GetDescriptor();
+    //获取服务对象的名字
+    std::string service_name = pserviceDesc->name();
+    std::cout << "service_name:" << service_name << std::endl;
+    //获取该服务对象有多少个方法
+    int method_count = pserviceDesc->method_count();
+
+    for(int i = 0; i < method_count; ++i) {
+        const google::protobuf::MethodDescriptor *pmethodDesc = pserviceDesc->method(i);
+        service_info.m_methodMap.insert({pmethodDesc->name(), pmethodDesc});
+        std::cout << "method_name:" << pmethodDesc->name() << std::endl;  
+    }
     
+    m_serviceMap.insert({service_name, service_info});
 }
 
 // 启动rpc服务节点，开始提供rpc远程网络调用服务
