@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/rong/mprpc/build/src",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/rong/mprpc/src/mprpcapplication.cc",
+  "file": "/home/rong/mprpc/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/src",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/rong/mprpc/src/mprpcconfig.cc",
+  "file": "/home/rong/mprpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/src",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/rong/mprpc/src/rpcprovider.cc",
+  "file": "/home/rong/mprpc/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/rong/mprpc/example/callee/userservice.cc",
+  "file": "/home/rong/mprpc/example/callee/userservice.cc"
+}
+]
