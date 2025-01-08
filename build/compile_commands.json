@@ -18,5 +18,10 @@
   "directory": "/home/rong/mprpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/rong/mprpc/example/callee/userservice.cc",
   "file": "/home/rong/mprpc/example/callee/userservice.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/rong/mprpc/example/user.pb.cc",
+  "file": "/home/rong/mprpc/example/user.pb.cc"
 }
 ]

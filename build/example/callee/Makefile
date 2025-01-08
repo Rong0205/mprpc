@@ -125,6 +125,33 @@ provider/fast:
 	cd /home/rong/mprpc/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
 .PHONY : provider/fast
 
+__/user.pb.o: __/user.pb.cc.o
+
+.PHONY : __/user.pb.o
+
+# target to build an object file
+__/user.pb.cc.o:
+	cd /home/rong/mprpc/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
+.PHONY : __/user.pb.cc.o
+
+__/user.pb.i: __/user.pb.cc.i
+
+.PHONY : __/user.pb.i
+
+# target to preprocess a source file
+__/user.pb.cc.i:
+	cd /home/rong/mprpc/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i
+.PHONY : __/user.pb.cc.i
+
+__/user.pb.s: __/user.pb.cc.s
+
+.PHONY : __/user.pb.s
+
+# target to generate assembly for a file
+__/user.pb.cc.s:
+	cd /home/rong/mprpc/build && $(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s
+.PHONY : __/user.pb.cc.s
+
 userservice.o: userservice.cc.o
 
 .PHONY : userservice.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... provider"
+	@echo "... __/user.pb.o"
+	@echo "... __/user.pb.i"
+	@echo "... __/user.pb.s"
 	@echo "... userservice.o"
 	@echo "... userservice.i"
 	@echo "... userservice.s"

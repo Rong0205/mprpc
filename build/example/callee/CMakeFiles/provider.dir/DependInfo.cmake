@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/rong/mprpc/example/user.pb.cc" "/home/rong/mprpc/build/example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
   "/home/rong/mprpc/example/callee/userservice.cc" "/home/rong/mprpc/build/example/callee/CMakeFiles/provider.dir/userservice.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
