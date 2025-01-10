@@ -1,8 +1,9 @@
 #aux_source_directory(. SRC_LIST)
 
 set(SRC_LIST 
-    mprpcapplication.cc 
-    mprpcconfig.cc 
+    mprpcapplication.cc
+    mprpcconfig.cc
+    rpcheader.pb.cc
     rpcprovider.cc
 )
 
