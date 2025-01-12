@@ -20,6 +20,11 @@
   "file": "/home/rong/mprpc/src/rpcprovider.cc"
 },
 {
+  "directory": "/home/rong/mprpc/build/src",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/rong/mprpc/src/mprpcchannel.cc",
+  "file": "/home/rong/mprpc/src/mprpcchannel.cc"
+},
+{
   "directory": "/home/rong/mprpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/provider.dir/userservice.cc.o -c /home/rong/mprpc/example/callee/userservice.cc",
   "file": "/home/rong/mprpc/example/callee/userservice.cc"
@@ -27,6 +32,16 @@
 {
   "directory": "/home/rong/mprpc/build/example/callee",
   "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/rong/mprpc/example/user.pb.cc",
+  "file": "/home/rong/mprpc/example/user.pb.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/rong/mprpc/example/caller/calluserservice.cc",
+  "file": "/home/rong/mprpc/example/caller/calluserservice.cc"
+},
+{
+  "directory": "/home/rong/mprpc/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/rong/mprpc/src/include -I/home/rong/mprpc/example  -g   -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/rong/mprpc/example/user.pb.cc",
   "file": "/home/rong/mprpc/example/user.pb.cc"
 }
 ]
