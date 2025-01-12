@@ -80,7 +80,7 @@ int main(int argc, char **argv)
     provider.NotifyService(new UserService());
 
     // 启动一个rpc服务发布节点   Run以后，进程进入阻塞状态，等待远程的rpc调用请求
-    //provider.Run();
+    provider.Run();
 
     return 0;
 }
