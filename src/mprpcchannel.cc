@@ -114,9 +114,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     if (-1 == connect(clientfd, (struct sockaddr*)&server_addr, sizeof(server_addr)))
     {
         close(clientfd);
-        //char errtxt[512] = {0};
-        //sprintf(errtxt, "connect error! errno:%d", errno);
-        //controller->SetFailed(errtxt);
+        char errtxt[512] = {0};
+        sprintf(errtxt, "connect error! errno:%d", errno);
+        controller->SetFailed(errtxt);
         return;
     }
 
@@ -124,9 +124,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     if (-1 == send(clientfd, send_rpc_str.c_str(), send_rpc_str.size(), 0))
     {
         close(clientfd);
-        //char errtxt[512] = {0};
-        //sprintf(errtxt, "send error! errno:%d", errno);
-        //controller->SetFailed(errtxt);
+        char errtxt[512] = {0};
+        sprintf(errtxt, "send error! errno:%d", errno);
+        controller->SetFailed(errtxt);
         return;
     }
 
@@ -136,9 +136,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     if (-1 == (recv_size = recv(clientfd, recv_buf, 1024, 0)))
     {
         close(clientfd);
-        //char errtxt[512] = {0};
-        //sprintf(errtxt, "recv error! errno:%d", errno);
-        //controller->SetFailed(errtxt);
+        char errtxt[512] = {0};
+        sprintf(errtxt, "recv error! errno:%d", errno);
+        controller->SetFailed(errtxt);
         return;
     }
 
@@ -148,9 +148,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     if (!response->ParseFromArray(recv_buf, recv_size))
     {
         close(clientfd);
-        //char errtxt[512] = {0};
-        //sprintf(errtxt, "parse error! response_str:%s", recv_buf);
-        //controller->SetFailed(errtxt);
+        char errtxt[1280] = {0};
+        sprintf(errtxt, "parse error! response_str:%s", recv_buf);
+        controller->SetFailed(errtxt);
         return;
     }
 
